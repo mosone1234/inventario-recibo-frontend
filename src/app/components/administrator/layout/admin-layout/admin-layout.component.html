@@ -1,0 +1,90 @@
+<div>
+    <div class="page-wrapper chiller-theme">
+        <!-- <a id="show-sidebar" class="btn btn-sm btn-dark btn-response">
+            <span style="margin-left: -22px;">
+                <i class="fas fa-bars"></i>
+            </span>
+        </a> -->
+        <app-sidebar></app-sidebar>
+        <div class="page-content-header">
+            <nav class="navbar navbar-dark bg-dark"
+                style="background: #424242 !important; padding-top: 0 !important; padding-bottom: 0 !important;">
+                <div class="navbar-brand">
+                    <button class="btn">
+                        <i class="fas fa-calendar-times"></i>
+                    </button>
+                    <button class="btn">
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                    <button class="btn">
+                        <i class="fas fa-id-badge"></i>
+                    </button>
+                    <button class="btn">
+                        <i class="far fa-check-square"></i>
+                    </button>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="toolbar-separator"></div>
+                    <button class="btn my-2 my-sm-0 mf-8 dropdown nav-link" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="http://angular-material.fusetheme.com/assets/images/avatars/Velazquez.jpg" alt=""
+                            width="40px" height="40px" style="border-radius:150px;">
+                        <span class="span1">Charlie Adams</span>
+                        <div class="dropdown-menu" style="background: #424242 !important;"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item btn">
+                                <span>
+                                    My Profile
+                                </span>
+                                <i class="far fa-user-circle mr-2"></i>
+                            </a>
+                            <a class="dropdown-item btn">
+                                <i class="far fa-envelope mr-2"></i>
+                                <span>
+                                    Inbox
+                                </span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item btn">
+                                <i class="fas fa-sign-out-alt mr-2"></i>
+                                <span>
+                                    Logout
+                                </span>
+                            </a>
+                        </div>
+                    </button>
+                    <div class="toolbar-separator"></div>
+                    <button class="btn my-2 my-sm-0 mf-8">
+                        <span style="color: hsla(0,0%,100%,.7);">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                    <div class="toolbar-separator"></div>
+                    <button class="btn my-2 my-sm-0 mf-8">
+                        <img src="http://angular-material.fusetheme.com/assets/icons/flags/us.png" alt="">
+                        EN
+                    </button>
+                    <div class="toolbar-separator"></div>
+                    <button class="btn my-2 my-sm-0 mf-8">
+                        <i class="fas fa-list-ul"></i>
+                    </button>
+                </form>
+            </nav>
+            <!-- <div class="card-color"></div> -->
+        </div>
+        <main class="page-content">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+</div>
+
+
+<!-- <div class="wrapper">
+    <div class="sidebar" data-color="danger" data-background-color="white" data-image="./assets/img/sidebar-1.jpg">
+        <app-sidebar></app-sidebar>
+        <div class="sidebar-background" style="background-image: url(./assets/img/sidebar-4.jpg)"></div>
+    </div>
+    <div class="main-panel">
+        <router-outlet></router-outlet>
+    </div>
+</div> -->

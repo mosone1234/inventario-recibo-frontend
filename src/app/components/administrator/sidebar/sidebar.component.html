@@ -1,0 +1,134 @@
+<nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-brand" style="background-color: #1e2129!important;">
+        <img src="http://angular-material.fusetheme.com/assets/images/logos/fuse.svg" alt="" width="40px" height="40px">
+        <a>sidebar</a>
+        <div id="close-sidebar" class="close-i">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <div class="sidebar-content">
+        <div class="sidebar-header d-flex justify-content-center" style="background-color: #1e2129!important; color: white;">
+            <div class="user-info text-center" v-if="this.option">
+                <span class="user-name">Charlie Adams
+                </span>
+                <span class="user-role">adams.charlie@mail.com</span>
+            </div>
+        </div>
+        <div class="avatar-container">
+            <img src="http://angular-material.fusetheme.com/assets/images/avatars/Velazquez.jpg" alt="" class="avatar">
+        </div>
+        <div class="sidebar-menu d-flex" style="background: rgb(45,50,62) !important; color: white !important;">
+            <ul>
+                <li class="header-menu" v-if="this.option">
+                    <span>General</span>
+                </li>
+                <!-- <li>
+                    <div class="header-line" v-if="!this.option"></div>
+                </li> -->
+                <li class="sidebar-dropdown cursor-pointer">
+                    <a id="dashboard">
+                        <i id="dashboard" class="fa fa-tachometer-alt"></i>
+                        <span id="dashboard">Dashboard</span>
+                        <span id="dashboard" class="badge badge-pill badge-warning">New</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul style="list-style-type: none;">
+                            <li>
+                                <a href="">
+                                    <span class="badge badge-pill badge-success">Pro</span>
+                                </a>
+                            </li>
+                            <li>
+                            </li>
+                            <li>
+                                <a>Categories</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a id="component">
+                        <i id="component" class="far fa-gem"></i>
+                        <span id="component">Components</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="fa fa-chart-line"></i>
+                        <span>Charts</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li>
+                                <a href="#">Pie chart</a>
+                            </li>
+                            <li>
+                                <a href="#">Line chart</a>
+                            </li>
+                            <li>
+                                <a href="#">Bar chart</a>
+                            </li>
+                            <li>
+                                <a href="#">Histogram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown cursor-pointer">
+                    <a id="maps">
+                        <i id="maps" class="fa fa-globe"></i>
+                        <span id="maps">Maps</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li>
+                                <a href="#">Google maps</a>
+                            </li>
+                            <li>
+                                <a href="#">Open street map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="header-menu">
+                    <span>Extra</span>
+                </li>
+                <!-- <li>
+                    <div class="header-line"></div>
+                </li> -->
+                <li>
+                    <a href="#">
+                        <i class="fa fa-book"></i>
+                        <span>Documentation</span>
+                        <span class="badge badge-pill badge-primary">Beta</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-folder"></i>
+                        <span>Examples</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-folder"></i>
+                        <span>Examples</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

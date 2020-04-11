@@ -1,0 +1,163 @@
+#login {
+    width: 100%;
+    height: 100vh;  
+    overflow: hidden;
+    background: url(../../../assets/dark-material-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.login-intro {
+    position: fixed;
+    width: 1000px;
+    color: white;
+}
+.login-form {
+    position: relative;
+    background: white;
+    float: right;
+    height: 100%;
+    width: 400px;
+    max-width: 400px;
+}
+.login-form-inside, .login-intro {
+    padding: 50px 48px 48px;
+}
+form {
+    width: 100%;
+    padding-top: 32px;
+    padding: 0px;
+}
+.text {
+    display: inline-flex;
+    position: relative;
+    padding: 0 8px;
+    margin-bottom: 10px;
+    color: rgb(228,228,228);
+    font-weight: 400;
+}
+.text::before {
+    content: "";
+    display: block;
+    width: 30px;
+    position: relative;
+    top: 12px;
+    border-top: 1px solid;
+    margin-right: 8px;
+}
+.text::after {
+    content: "";
+    border-top-color: rgba(0,0,0,.12);
+    display: block;
+    width: 30px;
+    position: relative;
+    top: 12px;
+    border-top: 1px solid;
+    margin-left: 8px;
+}
+.btn-google {
+    background:rgb(215,61,50);
+}
+.btn-facebook {
+    background: rgb(63,92,154);
+}
+.btn-login {
+    background: rgb(3,155,229);
+    margin: 16px auto;
+    display: block;
+}
+.btn-google, .btn-facebook {
+    width: 200px;
+    max-width: 200px;
+}
+.btn-login, .btn-google, .btn-facebook {
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    color: white;
+}
+.flex-column {
+    align-content: center;
+    align-items: center;
+}
+.input-modify {
+    background: transparent;
+    border-color: rgb(108,117,125);
+    color: white;
+}
+.form-group > label {
+    top: 18px;
+    left: 6px;
+    position: relative;
+    background-color: white;
+    padding: 0px 5px 0px 5px;
+    font-size: 0.9em;
+    z-index: 3;
+}
+input {
+    height: 63px;
+}
+.input-group-text {
+    background: transparent;
+}
+.input_icon {
+    position: absolute;
+    bottom: 17px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+}
+.btn-google, .btn-facebook {
+    font-size: 13px;
+}
+
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    /* display: inline-block; */
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 55%;
+    left: 18%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
